@@ -8,12 +8,15 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.app.Activity;
 import android.telephony.SmsManager;
+import android.telephony.SmsMessage;
 import android.util.Log;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import static com.example.drondel.fazenda.R.id.switch1;
 
 public class MainActivity extends Activity {
 
@@ -22,9 +25,10 @@ public class MainActivity extends Activity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String phoneNumber = "+79162109917";
-        String message = "Запрос статуса реле при открытии приложения";
-        sendSMS(phoneNumber,message);
+    // Временно закоментим, чтобы не спамить!
+    //    String phoneNumber = "+00000000000";
+    //    String message = "Get status";
+    //    sendSMS(phoneNumber,message);
 
         setContentView(R.layout.activity_main);
         Switch switch1 = (Switch) findViewById(R.id.switch1);
@@ -83,7 +87,6 @@ public class MainActivity extends Activity {
         SmsManager smsManager = SmsManager.getDefault();
         smsManager.sendTextMessage(phoneNumber, null, message, null, null);
     }
-
 
 
 }
