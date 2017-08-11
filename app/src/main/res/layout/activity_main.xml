@@ -11,19 +11,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.09"
+        android:showText="true"
         android:text="Гостинная" />
 
     <Switch
         android:id="@+id/switch2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Гостинная"
-        android:layout_weight="0.09" />
+        android:layout_weight="0.09"
+        android:showText="true"
+        android:text="Гостинная" />
+
     <Switch
         android:id="@+id/switch3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Душевая"
-        android:layout_weight="0.09" />
+        android:layout_weight="0.09"
+        android:showText="true"
+        android:text="Душевая" />
 
 </LinearLayout>
