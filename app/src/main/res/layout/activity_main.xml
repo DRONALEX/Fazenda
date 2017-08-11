@@ -1,10 +1,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:baselineAligned="false"
     android:orientation="vertical"
+    android:weightSum="1"
     tools:context="MainActivity"
-    android:weightSum="1">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_weight="0.03"
+        android:text="Температурные датчики"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:text="Гостинная" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:text="Душевая" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:text="Улица" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:text="Радиаторы"
+        android:textColor="@android:color/background_dark" />
 
     <Switch
         android:id="@+id/switch1"
@@ -20,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.09"
         android:showText="true"
-        android:text="Гостинная" />
+        android:text="Коридор" />
 
     <Switch
         android:id="@+id/switch3"
